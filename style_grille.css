@@ -1,0 +1,20 @@
+*{box-sizing: border-box;}
+body{margin: 0; padding: 0; font-family: sans-serif;}
+
+.col-6,
+.col-4,
+.col-8,
+.col-2{
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding: 0 10px;
+    
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+    
+.col-6{width: 50%;}
+.col-4{width: 33.333333%;}
+.col-8{width: 66.6666666%;}
+.col-2{width: 16.6666666%;}
