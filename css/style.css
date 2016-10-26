@@ -14,14 +14,25 @@
     src: url(./fonts/buffy/Buffy.ttf);
 }
 
-/*TEST AUTRE METHODE FLEXBOX MENU*/
+
+/*-----------------------STYLE BODY et wrapper------------------------*/
+body{
+    font-family: Century Gothic;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*TEST AUTRE METHODE FLEXBOX MENU 1*/
 .header__menu1{
     height: 25px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-top: 5px;
-    background-color: blue;
 }
 
 .connexion_search{
@@ -85,6 +96,7 @@ header h1{
     
 }
 
+/*-----------------------MENU 2------------------------*/
 .header__menu2 .block-visible{
     padding-top: 5px;
 }
@@ -106,15 +118,6 @@ header .logo{
     display: flex;
     justify-content: center;
     height: 110px;
-}
-
-body{
-    font-family: Century Gothic}
-
-.wrapper{
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 
@@ -237,7 +240,7 @@ nav a:hover{
     margin: 0 auto;
 }
 
-    /*LE MENU*/
+    /*LE MENU 1*/
     .header__menu1{
         height: 25px;
         display: flex;
@@ -246,20 +249,24 @@ nav a:hover{
         padding-left:40px;
         padding-right:40px;
         padding-top: 5px;
-        background-color: darkseagreen;
     }
   
-    .connexion1{
-        margin-left: 50px
+    .connexion a:hover{
+
     }
     
+    .connexion{
+        position: absolute;
+        right: 50px;
+    }
+        
     #searchthis {
         width:100px;
         height:24px;
         background-color: rgba(159,162,204,.3);
         border-bottom: 1px solid #c95199;
-       
-        margin-left: 600px;
+        right: 120px;
+        position: absolute;
     }
     
     #searchthis .loupe {
@@ -284,7 +291,7 @@ nav a:hover{
         padding:5 665px;
     }
 
-  
+  /*Le LOGO*/
     header h1{
         font-family: "Buffy";
         font-size: 71px;
@@ -293,6 +300,7 @@ nav a:hover{
 
     }
      
+    /*Le MENU 2*/
     nav ul{
         display: flex;
     }
@@ -351,6 +359,8 @@ nav a:hover{
     footer{
         height: 250px;
         background-color: grey;
+        color: white;
+        text-transform: uppercase;
     }
     
     .social-bar .sociaux{
@@ -390,7 +400,7 @@ nav a:hover{
         line-height: 20px;
         text-align: center;
         margin-top: 2px;
-        color: #cb5fab;
+        color: #8471b1;
     }
     
     .social-bar i{
@@ -417,7 +427,52 @@ nav a:hover{
     .newsletter{
         width: 450px;
     }
+    
+    .mentions h2{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .mentions p{
+        font-size: 12px;
+        width: 300px;
+    }
+    
+    .cb img{
+        width: 40px;
+        height: 40x;
+    }
         
+    .mykase{
+        width: 220px;
+        line-height: 20px;
+
+    }
+    
+    .propos{
+    width: 230px;
+        line-height: 20px;
+    }
+    
+    .services{
+        width: 220px;
+        line-height: 20px;
+    }
+    
+    .mentions{
+        display: flex;
+        flex-direction: row;
+        margin-left: 32px;
+        margin-top: 30px;
+    }
+    
+    .copyright{
+        float: right;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    
+    
     /*MAIN*/
     main{height: 500px;}
 }
